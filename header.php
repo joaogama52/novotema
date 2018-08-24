@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-    <html lang="en">
         <head>
             <meta charset="UTF-8">
             <meta name="viewpiont" content="width=device-width, initial-scale-1.0">
@@ -8,6 +7,20 @@
             <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" type="text/css" />
             
             <?php wp_head();?>
+            
+            <div class="geral">
+                <div class="row">
+                    <div class="col-md-3 logo">
+                        <a href="<?php echo site_url();?>"
+                            <img src="<?php echo get_template_directory_url()?>/assets/images/logo.png" class="logo">
+                        </a>    
+                    </div>
+                    <div class="col-md-9 titulo">
+                        <h1><?php bloginfo('name');?></h1>
+                        <p><?php bloginfo('description');?></p>
+                    </div>
+                </div>
+            
             
         </head>
         <body>
